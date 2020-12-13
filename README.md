@@ -1,9 +1,11 @@
 
  ![]( http://imgfz.com/i/en8hT9f.png)
 
-ArtClick is a DAW final project, so this application have teaching purposes and it doesn´t a commercial application. 
+ArtClick is my final project from course "Desarrollo de aplicaciones Web", so this application have teaching purposes and it doesn't a commercial application.
 
-This project is a artist social network.
+This aplicattion is a artist social network.
+
+URL: http://artclick.atwebpages.com/
 
 ![](https://img.shields.io/github/stars/pandao/editor.md.svg) ![](https://img.shields.io/github/forks/pandao/editor.md.svg) ![](https://img.shields.io/github/tag/pandao/editor.md.svg) ![](https://img.shields.io/github/release/pandao/editor.md.svg) ![](https://img.shields.io/github/issues/pandao/editor.md.svg) ![](https://img.shields.io/bower/v/editor.md.svg)
 
