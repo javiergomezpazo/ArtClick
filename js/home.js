@@ -9,6 +9,13 @@ $(document).ready(function () {
 
 });
 
+window.onresize = function (event) {
+    if ($("footer").css("position") == "absolute") {
+        if ($(window).width() < 577) {
+            $("footer").css("position", "relative");
+        }
+    }
+}
 
 function getParameterUrl() {
     var url = window.location.search.substring(1);
@@ -47,16 +54,19 @@ function loadPosts() {
                 }
 
                 $(".btnLike").on("click", updateLike);
-                
+
                 $("footer").css("position", "relative");
 
 
-            }else{
-                $("<p class='text-center'><a href='##'>Discover new artist</a></p>").appendTo($("#div_container_post"));     
+            } else {
+                $("<p class='text-center'><a href='##'>Discover new artist</a></p>").appendTo($("#div_container_post"));
+                if ($(window).width() < 577) {
+                    $("footer").css("position", "relative");
+                }
             }
-            
-                $("#loading").hide();
-                $("#div_container_post").css("display", "flex");
+
+            $("#loading").hide();
+            $("#div_container_post").css("display", "flex");
         }
     };
     xhttp.open("POST", "Actions.php", true);
